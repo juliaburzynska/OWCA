@@ -1,0 +1,3 @@
+[submodule "qmc5883l"]
+	path = qmc5883l
+	url = https://github.com/juliaburzynska/qmc5883l.git
