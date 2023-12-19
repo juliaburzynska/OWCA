@@ -34,3 +34,34 @@ def tagConfig():
    os.system('sudo hcitool -i hci0 cmd 0x08 0x0006 A0 00 A0 00 03 01 00 11 22 33 44 55 66 07 00')  
    time.sleep(0.1)
    
+
+
+from owca.sensors.Accelerometer import Accelerometer
+from owca.sensors.Magnetometer import Magnetometer
+from owca.communication.TagFrame import TagFrame
+from owca.communication.BLE_Module import BLE_Module
+
+
+
+if __name__ == "__main__":
+
+  tagConfig()
+
+  # Set id in range 0 - 65535
+  id = '1'
+  id = hex(int(id))[2:].zfill(4)
+  id = ' '.join(id[i:i+2] for i in range(0, len(id), 2))
+
+  pack_num = 0
+  accelerometer = Accelerometer()
+  magnetometer = Magnetometer()
+  beacon = BLE_Module(id)
+
+
+  while True:
+      acc = accelerometer.measure()
+      dir = magnetometer.measure()
+
+      tagFrame = TagFrame(pack_num, acc, dir)
+      beacon.transmit(tagFrame.toHex())
+      pack_num = (pack_num + 1)%256

@@ -1,9 +1,9 @@
 import bluetooth._bluetooth as bluez
-from communication.BLE_Module import BLE_Module
+from owca.communication.BLE_Module import BLE_Module
 import sys
-from communication.TagFrame import TagFrame
-from communication.anchorframe import AnchorFrame
-from communication.wifitransmission import WiFiTransmission
+from owca.communication.TagFrame import TagFrame
+from owca.communication.anchorframe import AnchorFrame
+from owca.communication.wifitransmission import WiFiTransmission
 from datetime import datetime
 
 try:

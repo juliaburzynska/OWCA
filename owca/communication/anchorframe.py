@@ -1,5 +1,6 @@
 import json
-from communication.TagFrame import TagFrame
+from TagFrame import TagFrame
+
 
 class AnchorFrame:
     def __init__(self, tagFrame, anchorID, rssi, tagID, ts):

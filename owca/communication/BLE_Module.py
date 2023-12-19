@@ -4,6 +4,7 @@ import os
 import time
 import struct
 
+
 class BLE_Module:
 
     def __init__(self, id):

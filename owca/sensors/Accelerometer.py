@@ -3,6 +3,7 @@ import board
 import adafruit_adxl34x
 import time
 
+
 i2c = busio.I2C(board.SCL, board.SDA)
 
 class Accelerometer:

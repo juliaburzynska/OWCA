@@ -1,5 +1,5 @@
 import socket
-from communication.anchorframe import AnchorFrame
+from anchorframe import AnchorFrame
 
 
 class WiFiTransmission:
