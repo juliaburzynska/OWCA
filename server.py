@@ -1,7 +1,7 @@
 from owca.communication.wifitransmission import WiFiTransmission
 from owca.file.filewriter import FileWriter
 from datetime import datetime
-
+import os
 
 
 class Server:
