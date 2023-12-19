@@ -1,5 +1,5 @@
 import socket
-from anchorframe import AnchorFrame
+from owca.communication.anchorframe import AnchorFrame
 
 
 class WiFiTransmission:

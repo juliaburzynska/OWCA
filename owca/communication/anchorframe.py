@@ -1,5 +1,5 @@
 import json
-from TagFrame import TagFrame
+from owca.communication.TagFrame import TagFrame
 
 
 class AnchorFrame:
