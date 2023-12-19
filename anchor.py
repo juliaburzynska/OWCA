@@ -25,7 +25,6 @@ while True:
             rssi = Frame[2]
             tagFrame = TagFrame.fromHex(tagHex)
             wifi = WiFiTransmission(ip, port)
-            print(wifi.ip)
             dt = datetime.now()
             ts = datetime.timestamp(dt)
             anchor = AnchorFrame(tagFrame, anchorID, rssi, tagID, ts)
