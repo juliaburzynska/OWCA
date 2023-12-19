@@ -1,4 +1,4 @@
-from qmc5883l import py_qmc5883l
+from owca.sensors.qmc5883l import py_qmc5883l
 
 
 class Magnetometer:
