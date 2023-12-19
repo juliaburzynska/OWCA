@@ -18,9 +18,9 @@ class Server:
 
 
 if __name__ == '__main__':
-    time = datetime.now().strftime(%Y_%m_%d_%H;%M;%S)
+    time = datetime.now().strftime("%Y_%m_%d_%H;%M;%S")
     wifi = WiFiTransmission('0.0.0.0', 8888)
-    fileWriter = FileWriter("data\\received_data" + time + ".csv")
+    fileWriter = FileWriter(os.path.join('data',f'received_data_{time}.csv'))
     server = Server(wifi, fileWriter)
     server.run()
 
