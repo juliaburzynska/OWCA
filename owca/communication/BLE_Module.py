@@ -8,7 +8,7 @@ import struct
 class BLE_Module:
 
     def __init__(self, id):
-        self.id = hex(int(id))[2:]
+        self.id = id
 
     def transmit(self, Hex_Frame):
         Beacon = f"sudo hcitool -i hci0 cmd 0x08 0x0008 18 08 09 50 42 4c 33 5f {self.id} 0E 1F {Hex_Frame}"
