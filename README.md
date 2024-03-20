@@ -2,11 +2,12 @@
 ## Project Description:
 Project Owca is a group project in the field of Internet of Things (IoT) at the Warsaw University of Technology. It aims to locate objects on a defined terrain using Bluetooth Low Energy (BLE) Beacon technology and transmitting data over WiFi in UDP format to a server, where the location is determined. The project is implemented on the Raspberry Pi platform.
 ## Technologies Used:
-* bluez
-* socket
+
 * Python 
 * Jupyter Notebook
-
+* bluez
+* socket
+  
 ## Setup
 
 To ensure proper functionality on both tag and anchor devices, it's necessary to install the `python3-bluez` package. This package provides Python bindings for the Bluez Bluetooth stack, which is essential for Bluetooth Low Energy (BLE) communication.
