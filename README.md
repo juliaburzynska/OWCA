@@ -4,7 +4,7 @@ Project Owca is a group project in the field of Internet of Things (IoT) at the 
 ## Technologies Used:
 * bluez
 * socket
-* Python Programming Language
+* Python 
 * Jupyter Notebook
 
 ## Setup
