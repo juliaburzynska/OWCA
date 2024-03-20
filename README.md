@@ -40,7 +40,7 @@ sudo python tag.py
 * File anchor.py
 The `anchor.py` file is intended to be run on devices deployed around the localized area. Anchors serve as reference points for determining the precise location of the tagged device.
 
-#### Execution:
+##### Execution:
 Similar to tag.py, you can run anchor.py using the Python interpreter:
 ```bash
 sudo python anchor.py
@@ -48,7 +48,7 @@ sudo python anchor.py
 * File server.py
 The `server.py` file is run on the server and is responsible for receiving data from anchor devices and processing it to determine the location of the tagged device.
 
-#### Execution:
+##### Execution:
 To run server.py, invoke it using the Python interpreter on the server:
 ```bash
 python server.py
